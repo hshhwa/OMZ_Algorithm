@@ -21,8 +21,8 @@ jobs:
 
       - name: Compile and Run UpdateReadme
         run: |
-          javac UpdateReadme.java
-          java UpdateReadme
+          javac src/UpdateReadme.java
+          java -cp src UpdateReadme
 
       - name: Commit and Push changes
         env:
