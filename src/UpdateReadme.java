@@ -30,7 +30,7 @@ public class UpdateReadme {
             }
         }
 
-        problemContent.append("\n총 문제: ").append(totalProblems).append(" 문제\n\n");
+        problemContent.append("\n총 해결한 문제: ").append(totalProblems).append(" 문제\n\n");
         problemContent.append(markerEnd);
 
         try {
