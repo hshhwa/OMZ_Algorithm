@@ -17,12 +17,12 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 17 # Java 버전
-          distribution: ''
+          distribution: 'zulu' # JDK 배포판 선택
 
       - name: Compile and Run UpdateReadme
         run: |
-          javac src/UpdateReadme.java
-          java -cp src UpdateReadme
+          javac UpdateReadme.java
+          java UpdateReadme
 
       - name: Commit and Push changes
         env:
