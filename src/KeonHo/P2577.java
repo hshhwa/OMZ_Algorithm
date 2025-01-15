@@ -21,7 +21,7 @@ import java.util.Arrays;
 // 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.
 
 
-class Main {
+class P2577 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
