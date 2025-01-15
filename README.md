@@ -1,6 +1,10 @@
 # OMZ 코딩테스트 뿌수기
 
 
+
+
+
+
 # 배열
 
 [문제집 링크](https://www.acmicpc.net/workbook/view/7307)
