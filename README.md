@@ -5,7 +5,7 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 
 - ChanMin: 1 문제
 - HongHongs: 2 문제
-- Heeyeon: 1 문제
+- Heeyoun: 1 문제
 - JiHyeok: 1 문제
 - JungKong: 1 문제
 - MinSeong: 1 문제
