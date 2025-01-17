@@ -42,3 +42,64 @@ public class P2577_noChar {
  * 출력
  * 첫째 줄에는 A × B × C의 결과에 0 이 몇 번 쓰였는지 출력한다. 마찬가지로 둘째 줄부터 열 번째 줄까지 A × B × C의 결과에 1부터 9까지의 숫자가 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.
  */
+
+/*
+
+
+public class P2577_NumericValue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+
+        // 0~9
+        int[] counts = new int[10];
+
+        // A * B * C = result <- counts
+        int result = A*B*C;
+
+        String resultString = String.valueOf(result);
+        for(char c: resultString.toCharArray()) {
+            int digit = Character.getNumericValue(c);
+            counts[digit]++;
+        }
+
+        for (int i = 0; i < counts.length; i++) {
+            System.out.println(counts[i]);
+        }
+
+        sc.close();
+    }
+}
+ */
+
+/*
+public class P2577_ASCII {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+
+        // 0~9
+        int[] counts = new int[10];
+
+        // A * B * C = result <- counts
+        int result = A*B*C;
+
+        String resultString = String.valueOf(result);
+        for(char c: resultString.toCharArray()) {
+            counts[c - '0']++;
+        }
+
+        for (int i = 0; i < counts.length; i++) {
+            System.out.println(counts[i]);
+        }
+
+        sc.close();
+    }
+}
+ */
