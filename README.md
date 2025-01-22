@@ -6,12 +6,12 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 - JiHyeok: 1 문제
 - JungKong: 1 문제
 - ChanMin: 1 문제
-- HongHongs: 2 문제
+- HongHongs: 8 문제
 - Heeyoun: 4 문제
 - KeonHo: 2 문제
 - MinSeong: 1 문제
 
-총 해결한 문제: 12 문제
+총 해결한 문제: 18 문제
 
 <!-- 문제 풀이 현황 끝 -->
 
@@ -19,7 +19,7 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 
 
 
-# 배열
+# 1주차 : 배열
 
 | 문제 분류 | 문제 | 문제 제목 |
 | :--: | :--: | :--: |
@@ -31,3 +31,11 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 | 기본 문제 | 13300 | [방 배정](https://www.acmicpc.net/problem/13300) |
 | 기본 문제 | 11328 | [Strfry](https://www.acmicpc.net/problem/11328) |
 | 기본 문제 | 1919 | [애너그램 만들기](https://www.acmicpc.net/problem/1919) |
+
+# 2주차 : 연결 리스트
+
+| 문제 분류 | 문제 | 문제 제목 |
+| :--: | :--: | :--: |
+| 연습 문제 | 1406 | [에디터](https://www.acmicpc.net/problem/1406) | 
+| 기본 문제 | 5397 | [키로거](https://www.acmicpc.net/problem/5397) | 
+| 기본 문제 | 1158 | [요세푸스 문제](https://www.acmicpc.net/problem/1158) |
