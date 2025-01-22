@@ -6,12 +6,12 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 - JiHyeok: 1 문제
 - JungKong: 1 문제
 - ChanMin: 1 문제
-- HongHongs: 8 문제
+- HongHongs: 9 문제
 - Heeyoun: 4 문제
 - KeonHo: 2 문제
 - MinSeong: 1 문제
 
-총 해결한 문제: 18 문제
+총 해결한 문제: 19 문제
 
 <!-- 문제 풀이 현황 끝 -->
 
