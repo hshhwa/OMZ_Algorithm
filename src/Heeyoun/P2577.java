@@ -1,7 +1,7 @@
 package Heeyoun;
 import java.util.Scanner;
 
-public class P2577_noChar {
+public class P2577 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
