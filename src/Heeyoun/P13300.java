@@ -30,6 +30,7 @@ public class P13300 {
             int answer = 0;
             for (int count : rooms.values()) {
                 answer += (count + K - 1) / K; // 올림 연산 
+                // double ceiling = Math.ceil(n / (double)k); // ceil, floor, round
             }
             
             // 5. 결과 출력
