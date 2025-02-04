@@ -1,6 +1,5 @@
-package Heeyoun;
+package Heeyoun.Week01;
 import java.io.*;
-import java.util.*;
 
 // 총 N개의 정수가 주어졌을 때, 정수 v가 몇 개인지
 public class P10807 {
