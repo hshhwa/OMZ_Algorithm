@@ -3,9 +3,7 @@ package HongHongs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
 
 public class P1158 {
@@ -18,29 +16,48 @@ public class P1158 {
         int n = Integer.parseInt(words[0]);
         int count = Integer.parseInt(words[1]);
 
-        List<Integer> answer = new ArrayList<>();
         LinkedList<Integer> list = new LinkedList<>();
-        for(int i = 0; i < n; i++){
-            list.add(i + 1);
+        for(int i = 1; i <= n; i++){
+            list.add(i);
         }
-        ListIterator<Integer> iter = list.listIterator(count - 1);
-        while(!list.isEmpty()) {
-            int check = 0;
-            answer.add(list.get(iter.nextIndex()));
 
-            iter.remove();
-            if(iter.hasPrevious()) {
-                iter.previous();
+        StringBuilder sb = new StringBuilder();
+        sb.append("<");
+
+        ListIterator<Integer> iter = list.listIterator();
+
+        for(int i = 0; i < count - 1; i++) {
+            if(!iter.hasNext()){
+                iter = list.listIterator();
             }
-            while(check != count) {
-                if(iter.hasNext()) {
+            iter.next();
+        }
+
+        while(!list.isEmpty()) {
+
+            if(!iter.hasNext()) {
+                iter = list.listIterator();
+            }
+
+            int removeIndex = iter.next();
+            iter.remove();
+            sb.append(removeIndex);
+
+            if(!list.isEmpty()) {
+                sb.append(", ");
+            }
+
+            if(!list.isEmpty()) {
+                for(int i = 0; i < count - 1; i++) {
+                    if(!iter.hasNext()) {
+                        iter = list.listIterator();
+                    }
                     iter.next();
                 }
-                else {
-                    iter.set(0);
-                }
-                count++;
             }
         }
+
+        sb.append(">");
+        System.out.println(sb);
     }
 }
