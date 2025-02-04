@@ -1,4 +1,4 @@
-package Heeyoun.Week01;
+package Heeyoun;
 import java.io.*;
 
 // 총 N개의 정수가 주어졌을 때, 정수 v가 몇 개인지

@@ -1,4 +1,4 @@
-package Heeyoun.Week01;
+package Heeyoun;
 
 import java.io.*;
 import java.util.*;
