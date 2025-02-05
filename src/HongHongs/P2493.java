@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class P1874 {
+public class P2493 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
