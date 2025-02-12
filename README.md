@@ -3,15 +3,15 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 
 <!-- 문제 풀이 현황 시작 -->
 
-- JungKong: 3 문제
+- HongHongs: 16 문제
 - ChanMin: 1 문제
+- JungKong: 3 문제
 - KeonHo: 2 문제
-- MinSeong: 1 문제
-- HongHongs: 15 문제
 - Heeyoun: 8 문제
+- MinSeong: 1 문제
 - JiHyeok: 3 문제
 
-총 해결한 문제: 33 문제
+총 해결한 문제: 34 문제
 
 <!-- 문제 풀이 현황 끝 -->
 
