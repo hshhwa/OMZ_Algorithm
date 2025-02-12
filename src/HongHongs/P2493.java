@@ -1,64 +1,47 @@
 package HongHongs;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Stack;
+import java.io.InputStreamReader;
+import java.util.*;
 
 public class P2493 {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(sc.nextLine());
-        int[] arr = new int[n];
-        Stack<Integer> stack = new Stack<>();
-        List<String> answer = new ArrayList<>();
+        int n = Integer.parseInt(br.readLine());
+        String[] input = br.readLine().split(" ");
 
-        for(int i = 0; i < n; i++){
-            arr[i] = Integer.parseInt(sc.nextLine());
+        int[] towers = new int[n];
+        for (int i = 0; i < n; i++) {
+            towers[i] = Integer.parseInt(input[i]);
         }
 
-        int index = 0;
-        int num = 1;
+        int[] answer = new int[n];
 
-        while(index < n) {
-            if(!stack.isEmpty()){
-                if(stack.peek() == arr[index]) {
-                    stack.pop();
-                    answer.add("-");
-                    index++;
-                }
-                else {
-                    stack.push(num);
-                    answer.add("+");
-                    num++;
-                }
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && towers[stack.peek()] < towers[i]) {
+                stack.pop();
+            }
+
+            if(stack.isEmpty()) {
+                answer[i] = 0;
             }
             else {
-                stack.push(num);
-                answer.add("+");
-                num++;
+                answer[i] = stack.peek() + 1;
             }
-            if(num > n + 1) {
-                break;
-            }
+            stack.push(i);
         }
 
-
-        if(stack.isEmpty()) {
-            for(int i = 0; i < answer.size(); i++){
-                if(i == answer.size() - 1) {
-                    System.out.print(answer.get(i));
-                }
-                else {
-                    System.out.println(answer.get(i));
-                }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            sb.append(answer[i]);
+            if (i < n - 1) {
+                sb.append(" ");
             }
         }
-        else {
-            System.out.print("NO");
-        }
-
+        System.out.println(sb);
     }
 }
