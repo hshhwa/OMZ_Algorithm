@@ -3,30 +3,24 @@ package HongHongs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
+
 //아직안품
-public class P6198 {
+public class P17298 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(bf.readLine());
+        String[] inputWords = bf.readLine().split(" ");
 
-        int n = Integer.parseInt(br.readLine());
-
-        long answer = 0;
+        int[] inputNums = new int[n];
+        Queue<Integer> queue = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
-
-        for(int i = 0; i < n; i++) {
-            int value = Integer.parseInt(br.readLine());
-            while(!stack.isEmpty()) {
-                if(stack.peek() <= value) {
-                    stack.pop();
-                }
-                else{
-                    break;
-                }
-            }
-            answer += stack.size();
-            stack.push(value);
+        for(int i = 0; i < n; i++){
+            inputNums[i] = Integer.parseInt(inputWords[i]);
         }
-        System.out.print(answer);
+
+
     }
 }
