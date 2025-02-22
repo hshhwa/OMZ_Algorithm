@@ -52,3 +52,11 @@ OMZ 팀 코딩테스트 문제 풀이를 위한 스터디 저장소입니다.
 | 응용 문제 | 17298 | [오큰수](https://www.acmicpc.net/problem/17298) | 
 | 응용 문제 | 3015 | [오아시스 재결합](https://www.acmicpc.net/problem/3015) |
 | 응용 문제 | 6549 | [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549) | 
+
+# 큐
+
+| 문제 분류 | 문제 | 문제 제목 | 
+|:-----:| :--: | :--: | 
+| 연습 문제 | 10845 | [큐](https://www.acmicpc.net/problem/10845) | 
+| 기본 문제 | 18258 | [큐 2](https://www.acmicpc.net/problem/18258) |
+| 기본 문제 | 2164 | [카드2](https://www.acmicpc.net/problem/2164) |
