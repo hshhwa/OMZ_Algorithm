@@ -17,10 +17,11 @@ public class P17298 {
         int[] inputNums = new int[n];
         Queue<Integer> queue = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
+
         for(int i = 0; i < n; i++){
-            inputNums[i] = Integer.parseInt(inputWords[i]);
+            int num = Integer.parseInt(inputWords[i]);
+            inputNums[i] = num;
+            stack.push(num);
         }
-
-
     }
 }
